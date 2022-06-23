@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "inject_style.css" ],
+      "js": [ "lib/jquery/jquery.js", "inject.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png"
+   },
+   "manifest_version": 2,
+   "name": "Video Speed Control",
+   "description": "Originally 'VideoSpeedHub' forked by Simon Walker.",
+   "offline_enabled": true,
+   "permissions": [ "storage", "\u003Call_urls>", "webRequest", "webRequestBlocking" ],
+   "version": "1.4.2",
+   "web_accessible_resources": [ "icons/l-arrow.png", "icons/r-arrow.png" ]
+}

@@ -1,0 +1,93 @@
+@font-face { font-family: Cairo; src: url('./fonts/Cairo-Regular.ttf'); font-weight: 400; }
+@font-face { font-family: Cairo; src: url('./fonts/Cairo-Bold.ttf'); font-weight: bold; }
+@font-face { font-family: Cairo; src: url('./fonts/Cairo-Black.ttf'); font-weight: 900; }
+
+body {
+    width: 300px;
+    background: white;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 12px;
+    border-bottom: 1px solid #44404020;
+}
+
+.item {
+    height: 70px;
+    padding: 16px 16px 0px 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+#logo {
+    margin-top: 5px;
+}
+
+.btn-shortcut {
+    width: 28px;
+    height: 28px;
+}
+
+.cont h3 {
+    font-family: 'Cairo';
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+}
+
+
+.howTo-text {
+    font-family: 'Cairo';
+    font-size: 16px;
+    line-height: 120%;
+    color: #444040;
+}
+
+.howTo-container {
+    padding: 24px 16px 20px 16px !important;
+}
+
+.cont {
+    padding: 0px 16px;
+}
+
+.red {
+    font-family: 'Cairo';
+    font-weight: bold;
+    color: #FBC126;
+    width: 100%;
+}
+
+.cont .red {
+    font-family: 'Cairo';
+    font-weight: bold;
+    font-size: 18px;
+    color: #FBC126;
+    width: 100%;
+}
+
+.disabled-content {
+    width: 100%;
+    height: 308px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+#decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}

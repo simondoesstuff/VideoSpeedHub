@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./lib/bootstrap.css">
+    <link href="lib/jquery/switcher.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <img id="logo" src="icons/logo.png">
+        <span style="display: block">
+          <div class="mr-1 fs-5 fw-bold">All</div>
+          <input class="form-check-input" type="checkbox" id="toggleSwitch" checked>
+        </span>
+        <span style="display: block">
+          <div class="mr-1 fs-5 fw-bold">Keybinds</div>
+          <input class="form-check-input" type="checkbox" id="toggleKeybinds" checked>
+        </span>
+      </header>
+
+      <div class="mb-2">
+        <h6 class="red">Forked by Simon Walker</h3>
+      </div>
+
+      <div class="disabled-content">
+        <img src="icons/disabled.png">
+      </div>
+
+      <div class="cont howTo-container">
+        <h3 class="red">How to use the extension</h3>
+        <h3 class="howTo-text">Speed controls appear in the overlay over the video</h3>
+      </div>
+      
+      <section class="keybindInfo">
+        <div class="cont mb-1">
+          <h3 class="red" style="margin-bottom: 10px;">Use keyboard shortcuts</h3>
+          <img class="btn-shortcut r-btn" src="/popup-icons/r-button.svg" width="27px" height="27px">
+          <h3 class="ml-2">- default playback speed</h3>
+        </div>
+        <div class="cont mb-1">
+          <img class="btn-shortcut s-btn" src="/popup-icons/s-button.svg" width="27px" height="27px">
+          <h3 class="ml-2">- slow down</h3>
+        </div>
+        <div class="cont mb-1">
+          <img class="btn-shortcut d-btn" src="/popup-icons/d-button.svg" width="27px" height="27px">
+          <h3 class="ml-2">- increase speed</h3>
+        </div>
+        <div class="cont" style="margin-bottom: 24px;">
+          <img class="btn-shortcut v-btn" src="/popup-icons/v-button.svg" width="27px" height="27px">
+          <h3 class="ml-2">- close controls</h3>
+        </div>
+        <img id="decor" src="./popup-icons/decoration.png"/>
+      </section>
+    </div>
+    
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/jquery/jquery.switcher.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
